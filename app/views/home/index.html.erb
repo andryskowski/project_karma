@@ -1,2 +1,7 @@
 <h1>Home#index</h1>
 <p>Strona startowa</p>
+
+      <li class="nav-item">
+        <%= link_to 'Logowanie', new_user_session_path%>
+        <%= link_to 'Wyloguj sie', destroy_user_session_path, method: :delete%>
+      </li>
